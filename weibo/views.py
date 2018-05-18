@@ -9,3 +9,6 @@ def help(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def sigup(request):
+    return render(request, 'signup.html')

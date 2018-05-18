@@ -22,6 +22,7 @@ from weibo import views as  weibo_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', weibo_views.home, name='home'),
-    url(r'^help/$', weibo_views.help, name='hlep'),
+    url(r'^help/$', weibo_views.help, name='help'),
     url(r'^about/$', weibo_views.about, name='about'),
+    url(r'^signup/$', weibo_views.sigup, name='about'),
 ]
