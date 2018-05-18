@@ -17,8 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url ,include
 
+from weibo import views as  weibo_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'', include('weibo.urls')),
+    url(r'^$', weibo_views.home, name='home'),
+    url(r'^help/$', weibo_views.help, name='hlep'),
+    url(r'^about/$', weibo_views.about, name='about'),
 ]

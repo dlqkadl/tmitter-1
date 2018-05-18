@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tmitter</title>
-<link rel="stylesheet" href="">
+    <title>{% block title %}Tmitter{% endblock %}</title>
+    <link rel="stylesheet" href="">
 </head>
 <body>
-<h1>Tmitter</h1>
+{% block body %}
+    <h1>Tmitter</h1>
+{% endblock %}
 </body>
 </html>
